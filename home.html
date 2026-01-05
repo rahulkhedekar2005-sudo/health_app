@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding-bottom: 70px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .greeting {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .health-score {
+      background: #2ecc71;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .section-title {
+      margin: 20px 0 10px;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card .material-icons {
+      font-size: 32px;
+      color: #2ecc71;
+    }
+
+    .articles {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .article {
+      min-width: 180px;
+      background: white;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-item {
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .nav-item.active {
+      color: #2ecc71;
+    }
+
+    .nav-item .material-icons {
+      font-size: 26px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="greeting">Hi, Rahul 👋</div>
+
+    <div class="health-score">
+      Health Score<br>
+      <strong>82 / 100</strong>
+    </div>
+
+    <div class="section-title">Today Highlights</div>
+    <div class="cards">
+      <div class="card">
+        <span class="material-icons">directions_walk</span>
+        <p>Steps<br><strong>6,540</strong></p>
+      </div>
+      <div class="card">
+        <span class="material-icons">local_fire_department</span>
+        <p>Calories<br><strong>320</strong></p>
+      </div>
+      <div class="card">
+        <span class="material-icons">bedtime</span>
+        <p>Sleep<br><strong>7h</strong></p>
+      </div>
+      <div class="card">
+        <span class="material-icons">map</span>
+        <p>Distance<br><strong>4.1 km</strong></p>
+      </div>
+    </div>
+
+    <div class="section-title">Recommended for you</div>
+    <div class="articles">
+      <div class="article">10 Tips for Healthy Life</div>
+      <div class="article">Best Morning Exercises</div>
+      <div class="article">Improve Your Sleep</div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <div class="nav-item active" onclick="location.href='home.html'">
+      <span class="material-icons">home</span>Home
+    </div>
+    <div class="nav-item" onclick="location.href='overview.html'">
+      <span class="material-icons">bar_chart</span>Overview
+    </div>
+    <div class="nav-item" onclick="location.href='mapping.html'">
+      <span class="material-icons">map</span>Mapping
+    </div>
+    <div class="nav-item" onclick="location.href='profile.html'">
+      <span class="material-icons">person</span>Profile
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f9fbfc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .illustration {
+      width: 220px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #333;
+      margin: 20px 0;
+      font-size: 22px;
+    }
+
+    .btn {
+      background: #2ecc71;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img 
+  src="women-fitness.png"
+  class="illustration"
+  alt="Fitness Woman"
+> 
+
+
+    <h2>Let’s start your health journey today with us!</h2>
+
+    <button class="btn" onclick="location.href='login.html'">
+      Continue
+    </button>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="nav-btn" onclick="location.href='home.html'"><span class="material-icons">home</span><small>Home</small></div>
+    <div class="nav-btn" onclick="location.href='overview.html'"><span class="material-icons">bar_chart</span><small>Overview</small></div>
+    <div class="nav-btn" onclick="location.href='mapping.html'"><span class="material-icons">map</span><small>Mapping</small></div>
+    <div class="nav-btn" onclick="location.href='profile.html'"><span class="material-icons">person</span><small>Profile</small></div>
+  </div>
+
+</body>
+</html>

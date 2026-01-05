@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mapping</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Route Tracking</h2>
+
+<div class="stats">
+  <div class="stat"><strong id="time">00:00</strong><br>Time</div>
+  <div class="stat"><strong id="distance">0 m</strong><br>Distance</div>
+</div>
+
+<div id="map"></div>
+
+<div class="controls">
+  <button class="btn start" onclick="startTracking()">Start</button>
+  <button class="btn pause hidden" onclick="pauseTracking()">Pause</button>
+  <button class="btn stop hidden" onclick="stopTracking()">Stop</button>
+</div>
+
+<div id="mappingHistory" style="padding:12px;margin:10px">
+  <h3 style="margin:6px 0">History</h3>
+  <ul id="historyList" style="list-style:none;padding:0;margin:0"></ul>
+</div>
+
+<div class="bottom-nav">
+  <div class="nav-item" onclick="location.href='home.html'">
+    <span class="material-icons">home</span>Home
+  </div>
+  <div class="nav-item" onclick="location.href='overview.html'">
+    <span class="material-icons">bar_chart</span>Overview
+  </div>
+  <div class="nav-item active" onclick="location.href='mapping.html'">
+    <span class="material-icons">map</span>Mapping
+  </div>
+  <div class="nav-item" onclick="location.href='profile.html'">
+    <span class="material-icons">person</span>Profile
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>

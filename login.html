@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg,#f4f6f8,#eef2f3);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-box {
+      background: white;
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      margin: 12px;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+
+    .field { margin-bottom: 14px; }
+    .field input { width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #e6e6e6; font-size: 16px; box-sizing: border-box; }
+
+    .login-btn { background: #4caf50; color: white; border: none; width: 100%; padding: 12px; font-size: 16px; border-radius: 10px; cursor: pointer; }
+    .login-btn:hover { background: #43a047; }
+
+    @media (max-width:480px){
+      body{padding:12px}
+      .login-box{padding:16px;border-radius:12px}
+      .login-box h2{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Login</h2>
+
+    <div class="field">
+      <input type="text" placeholder="Email or Username">
+    </div>
+
+    <div class="field">
+      <input type="password" placeholder="Password">
+    </div>
+
+    <button class="login-btn" onclick="location.href='home.html'">
+      Login
+    </button>
+  </div>
+
+</body>
+</html>

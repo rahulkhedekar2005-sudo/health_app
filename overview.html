@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding-bottom: 70px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .filter {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .filter button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background: #e0e0e0;
+    }
+
+    .filter .active {
+      background: #2ecc71;
+      color: white;
+    }
+
+    .stat {
+      background: white;
+      padding: 15px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    .stat .material-icons {
+      color: #2ecc71;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-item {
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .nav-item.active {
+      color: #2ecc71;
+    }
+
+    .nav-item .material-icons {
+      font-size: 26px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Health Overview</h2>
+
+    <div class="filter">
+      <button class="active">Daily</button>
+      <button>Weekly</button>
+      <button>Monthly</button>
+    </div>
+
+    <div class="stat">
+      <span class="material-icons">directions_walk</span>
+      <span>Steps</span>
+      <strong>18,430</strong>
+    </div>
+
+    <div class="stat">
+      <span class="material-icons">map</span>
+      <span>Distance</span>
+      <strong>12.6 km</strong>
+    </div>
+
+    <div class="stat">
+      <span class="material-icons">local_fire_department</span>
+      <span>Calories</span>
+      <strong>740</strong>
+    </div>
+
+    <div class="stat">
+      <span class="material-icons">bedtime</span>
+      <span>Sleep</span>
+      <strong>7h 20m</strong>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="nav-item" onclick="location.href='home.html'">
+      <span class="material-icons">home</span>Home
+    </div>
+    <div class="nav-item active" onclick="location.href='overview.html'">
+      <span class="material-icons">bar_chart</span>Overview
+    </div>
+    <div class="nav-item" onclick="location.href='mapping.html'">
+      <span class="material-icons">map</span>Mapping
+    </div>
+    <div class="nav-item" onclick="location.href='profile.html'">
+      <span class="material-icons">person</span>Profile
+    </div>
+  </div>
+
+</body>
+</html>
